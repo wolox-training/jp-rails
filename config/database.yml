@@ -5,18 +5,15 @@ default: &default
 
 development:
   <<: *default
-  database: jp-rails_development
-  username: wbook_api
-  password: wbook_api
+  database: training
 
   
 test:
   <<: *default
-  database: jp-rails_test
+  database: training_test
 
 #
 production:
   <<: *default
-  database: jp-rails_production
-  username: jp-rails
-  password: <%= ENV['JP-RAILS_DATABASE_PASSWORD'] %>
+  database: training_production
+  password: <%= ENV['WBOOK_API_DATABASE_PASSWORD'] %>
