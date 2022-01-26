@@ -35,6 +35,9 @@ gem 'rubocop', '~> 1.25', require: false
 
 gem 'devise_token_auth'
 
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'wor-paginate'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -49,6 +52,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.1.0'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  
 end
 
 group :development do
