@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: jp-rails_development
+  username: wbook_api
+  password: wbook_api
+
+  
+test:
+  <<: *default
+  database: jp-rails_test
+
+#
+production:
+  <<: *default
+  database: jp-rails_production
+  username: jp-rails
+  password: <%= ENV['JP-RAILS_DATABASE_PASSWORD'] %>
