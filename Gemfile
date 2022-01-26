@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'rubocop', '~> 1.25', require: false
 
+gem 'devise_token_auth'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
